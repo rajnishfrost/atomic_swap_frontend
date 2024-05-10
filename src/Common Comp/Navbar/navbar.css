@@ -1,0 +1,23 @@
+.buttonNav{
+    padding: 5px 10px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 800;
+}
+.p10{
+    padding: 10px;
+}
+.nav{
+    border: 1px solid rgb(0, 0, 0);
+    max-width: 80%;
+    height: 30px;
+    display: block;
+    margin: auto;
+    position: relative;
+}
+.buttonOuter{
+    position: absolute;
+    right: 10px;
+}
