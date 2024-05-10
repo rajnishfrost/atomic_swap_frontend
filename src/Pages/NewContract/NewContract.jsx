@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import "./newContract.css";
-import dayjs, { Dayjs } from 'dayjs';
+import dayjs from 'dayjs';
 import Stack from '@mui/material/Stack';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
@@ -22,7 +22,7 @@ export default function NewContract() {
             let seconds = dayjs(mainValue).unix()
             setTimestamp(seconds)
         }
-    }, [value]);
+    }, [value , dispatch]);
 
    
     return (
