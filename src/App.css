@@ -22,6 +22,33 @@ padding-top: 5px;
 .justify-around{
   justify-content: space-around;
 }
+.justify-between{
+  justify-content: space-between;
+}
 .w100{
   width: 100%;
+}
+.d-block{
+  display: block;
+}
+.d-none{
+  display: none;
+}
+.color-red{
+  color: red;
+}
+.ml-10{
+  margin-left: 10px;
+}
+.mx-10{
+  margin: auto 10px;
+}
+.my-10{
+  margin: 10px auto;
+}
+.mr-10{
+margin-right: 10px;
+}
+.m-auto{
+  margin: auto;
 }

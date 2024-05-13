@@ -6,7 +6,7 @@ export const network = async (dispatch) => {
  dispatch(save(data.data))
 }
 
-export const new_contract = async(payload) => {
-    const data = await axios.post(`${process.env.REACT_APP_BACKEND_URI}blockchain-transaction/network`, payload);
-    console.log(data);
+export const new_contract = async (payload) => {
+    return await axios.post(`${process.env.REACT_APP_BACKEND_URI}blockchain-transaction/network`, payload);
 }
+
