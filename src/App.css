@@ -25,6 +25,10 @@ padding-top: 5px;
 .justify-between{
   justify-content: space-between;
 }
+.align-item-center{
+  align-items: center;
+}
+
 .w100{
   width: 100%;
 }
@@ -51,4 +55,7 @@ margin-right: 10px;
 }
 .m-auto{
   margin: auto;
+}
+.h-100vh{
+  height: 100vh;
 }

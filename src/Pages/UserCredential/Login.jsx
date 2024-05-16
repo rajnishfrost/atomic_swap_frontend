@@ -22,7 +22,7 @@ export default function Login() {
   }
   return (
     <div>
-      <div className='d-flex justify-center' style={{ "align-items": "center", height: "100vh" }}>
+      <div className='d-flex justify-center' style={{ alignItems: "center", height: "100vh" }}>
         <div>
           <input className='d-block mt-10' type="email" placeholder='E-mail' name="email" onChange={(e) => inputChange(e)} style={{ width: "300px", height: "30px", padding: "3px" }} />
           <input className='mt-10 d-block' type="password" placeholder='Password' name="password" onChange={(e) => inputChange(e)} style={{ width: "300px", height: "30px", padding: "3px" }} />

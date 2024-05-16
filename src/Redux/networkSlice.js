@@ -2,7 +2,8 @@ import { createSlice } from '@reduxjs/toolkit'
 
 const initialState = {
   network: [{}],
-  from : ""
+  from : "" , 
+  trasanction : [{}]
 }
 
 export const networkSlice = createSlice({
@@ -14,11 +15,14 @@ export const networkSlice = createSlice({
     },
     fromAddress : (state , action) => {
       state.from = action.payload
+    },
+    saveTransaction : (state , action) => {
+      state.trasanction = action.payload
     }
   },
 })
 
 // Action creators are generated for each case reducer function
-export const { save  , fromAddress} = networkSlice.actions
+export const { save  , fromAddress , saveTransaction} = networkSlice.actions
 
 export default networkSlice.reducer

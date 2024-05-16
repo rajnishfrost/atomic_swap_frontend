@@ -30,7 +30,7 @@ export default function Signup() {
             <h1>Sign Up Successfull Back To <Link to="/log-in">Login</Link> Page</h1>
           </div>
           :
-          <div className='d-flex justify-center' style={{ "align-items": "center", height: "100vh" }}>
+          <div className='d-flex justify-center' style={{ alignItems: "center", height: "100vh" }}>
             <div>
               <div className='d-flex justify-between'>
                 <input onChange={(e) => { onInputChange(e) }} value={input.firstname} type="text" placeholder='Firstname' name="firstname" style={{ height: "30px", padding: "3px" }} />

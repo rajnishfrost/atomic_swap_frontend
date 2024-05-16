@@ -24,7 +24,6 @@ function App() {
     verifyToken(dispatch, navigate );
     // eslint-disable-next-line
   }, [])
-  console.log(isAuthenticated);
 
   return (
     <div className='dark'>
