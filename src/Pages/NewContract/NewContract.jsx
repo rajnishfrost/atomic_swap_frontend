@@ -6,10 +6,10 @@ import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { DateTimePicker } from '@mui/x-date-pickers';
 import { useSelector, useDispatch } from 'react-redux';
-import { network, new_contract } from "../../API/network.js";
+import { network } from "../../API/network.js";
 import Navbar from "../../Common Comp/Navbar/Navbar";
 import { encrypt } from '../../utils/encrpt.js';
-
+import {new_contract} from "../../API/blockchainTransaction.js"
 
 export default function NewContract() {
     const [value, setValue] = useState(null);

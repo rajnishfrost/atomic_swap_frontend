@@ -1,20 +1,17 @@
 import React, { useEffect } from 'react'
 import Navbar from '../../Common Comp/Navbar/Navbar'
 import { useDispatch, useSelector } from 'react-redux'
-import { getTrasanction } from '../../API/network';
+import { getTrasanction } from '../../API/blockchainTransaction';
 import "./transaction.css"
-import formatDate from "../../utils/formate"
+import formatDate from "../../utils/formateDateAndTime"
 export default function Transaction() {
   const getTransaction = useSelector((state) => state.network.trasanction);
   const dispatch = useDispatch()
-  console.log(getTransaction);
 
   useEffect(() => {
     getTrasanction(dispatch);
     // eslint-disable-next-line
   }, [])
-
-
 
   const tableRows = getTransaction?.map((row, index) => {
     return(

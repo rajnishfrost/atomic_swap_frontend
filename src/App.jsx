@@ -13,6 +13,7 @@ import GetBlock from "./Pages/GetBlock/GetBlock";
 import Transaction from "./Pages/Transaction/Transaction";
 import Refund from "./Pages/Refund/Refund"
 import PublicRoute from './Common Comp/ProtectedRoute/PublicRoute';
+import ContractStatus from './Pages/ContractStatus/ContractStatus';
 
 function App() {
   const isAuthenticated = useSelector((state) => state.auth.isAuthenticated);
@@ -38,6 +39,7 @@ function App() {
           <Route path='/get-block' element={<GetBlock />}></Route>
           <Route path='/transaction' element={<Transaction />}></Route>
           <Route path='/refund' element={<Refund />}></Route>
+          <Route path='/contract-status' element={<ContractStatus />}></Route>
         </Route>
         <Route path='*' element={<PageNotFound />}></Route>
       </Routes>
