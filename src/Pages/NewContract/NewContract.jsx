@@ -102,7 +102,7 @@ export default function NewContract() {
                     <div className='d-flex justify-center mt-10 '>
                         <button onClick={() => handleContract()}>Sign Transaction</button>
                     </div>
-                    <p>{success}</p>
+                    <p className='text-center'>{success}</p>
                 </div>
             </div>
         </div>

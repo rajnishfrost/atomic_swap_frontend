@@ -64,11 +64,11 @@ const Navbar = () => {
         <div>
           <ul className='d-flex nav-ul'>
             <li ><Link to="/">Home |</Link></li>
-            <li className='ml-10'><Link to="/withdraw"> Withdraw |</Link></li>
-            <li className='ml-10'><Link to="/get-block"> Get Block |</Link></li>
             <li className='ml-10'><Link to="/transaction"> Transaction |</Link></li>
+            <li className='ml-10'><Link to="/get-block"> Get Block |</Link></li>
+            <li className='ml-10'><Link to="/withdraw"> Withdraw |</Link></li>
             <li className='ml-10'><Link to="/refund"> Refund |</Link></li>
-            <li className='ml-10'><Link to="/log-in"> login |</Link></li>
+            <li className='ml-10'><Link to="/contract-status">Contract Status</Link></li>
           </ul>
         </div>
         <div className='d-flex'>

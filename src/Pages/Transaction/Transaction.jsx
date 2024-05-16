@@ -3,7 +3,7 @@ import Navbar from '../../Common Comp/Navbar/Navbar'
 import { useDispatch, useSelector } from 'react-redux'
 import { getTrasanction } from '../../API/network';
 import "./transaction.css"
-
+import formatDate from "../../utils/formate"
 export default function Transaction() {
   const getTransaction = useSelector((state) => state.network.trasanction);
   const dispatch = useDispatch()
@@ -22,6 +22,7 @@ export default function Transaction() {
         <td>{row?.transaction?.contract_data?.blockNumber}</td>
         <td>{row?.transaction?.contract_data?.blockHash}</td>
         <td>{row?.transaction?.chainID}</td>
+        <td>{formatDate(row?.createdAt)}</td>
       </tr>
     )
   });
@@ -36,6 +37,7 @@ export default function Transaction() {
               <th>Block Number</th>
               <th>Block Hash</th>
               <th>Chain ID</th>
+              <th>Date</th>
             </tr>
           </thead>
           <tbody>
