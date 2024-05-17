@@ -39,3 +39,12 @@ export const getContract = async (payload) => {
     };
     return await axios.post(`${process.env.REACT_APP_BACKEND_URI}blockchain-transaction/get-contract`, payload, headers);
 }
+
+export const withdraw = async (payload) => {
+    const token = JSON.parse(localStorage.getItem("Atomic_Swap"));
+    const headers = {
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${token.token}`
+    };
+    return await axios.post(`${process.env.REACT_APP_BACKEND_URI}blockchain-transaction/withdraw`, payload, headers);
+}

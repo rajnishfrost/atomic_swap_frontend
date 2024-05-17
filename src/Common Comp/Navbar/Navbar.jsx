@@ -55,7 +55,8 @@ const Navbar = () => {
   useEffect(() => {
     const formData = new FormData();
      formData.append("profileImage", image);
-     profileImageUpload(formData)
+     profileImageUpload(formData);
+     // eslint-disable-next-line
   }, [image])
 
   return (
@@ -68,7 +69,8 @@ const Navbar = () => {
             <li className='ml-10'><Link to="/get-block"> Get Block |</Link></li>
             <li className='ml-10'><Link to="/withdraw"> Withdraw |</Link></li>
             <li className='ml-10'><Link to="/refund"> Refund |</Link></li>
-            <li className='ml-10'><Link to="/contract-status">Contract Status</Link></li>
+            <li className='ml-10'><Link to="/contract-status">Contract Status |</Link></li>
+            <li className='ml-10'><Link to="/networks">Networks</Link></li>
           </ul>
         </div>
         <div className='d-flex'>

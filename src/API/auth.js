@@ -35,10 +35,6 @@ export const verifyToken = async (dispatch, navigate) => {
 
 export const signupAPI = async (payload) => {
     try {
-        const token = JSON.parse(localStorage.getItem("Atomic_Swap"));
-        if (!token)
-            return
-        axios.defaults.headers.common['Authorization'] = `Bearer ${token.token}`;
         await axios.post(`${process.env.REACT_APP_BACKEND_URI}user/signup`, payload);
         return 200
     } catch (error) {
@@ -49,6 +45,10 @@ export const signupAPI = async (payload) => {
 
 export const profileImageUpload = async (payload) => {
     try {
+        const token = JSON.parse(localStorage.getItem("Atomic_Swap"));
+        if (!token)
+            return
+        axios.defaults.headers.common['Authorization'] = `Bearer ${token.token}`;
         await axios.post(`${process.env.REACT_APP_BACKEND_URI}user/profile-image`, payload);
         return 200
     } catch (error) {

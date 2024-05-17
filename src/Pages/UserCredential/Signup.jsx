@@ -16,10 +16,11 @@ export default function Signup() {
     const response = await signupAPI(input);
     setInput({});
     if (response === 401)
-      return setError("Email Already Registered")
-    setSignupSuccess(true);
+      return setError("Email Already Registered");
+    else
+      setSignupSuccess(true);
   }
-
+  console.log(input);
   return (
     <div>
 

@@ -14,6 +14,7 @@ import Transaction from "./Pages/Transaction/Transaction";
 import Refund from "./Pages/Refund/Refund"
 import PublicRoute from './Common Comp/ProtectedRoute/PublicRoute';
 import ContractStatus from './Pages/ContractStatus/ContractStatus';
+import Networks from './Pages/Networks/Networks';
 
 function App() {
   const isAuthenticated = useSelector((state) => state.auth.isAuthenticated);
@@ -42,6 +43,7 @@ function App() {
           <Route path='/contract-status' element={<ContractStatus />}></Route>
         </Route>
         <Route path='*' element={<PageNotFound />}></Route>
+        <Route path='/networks' element={<Networks />}></Route>
       </Routes>
     </div>
   );
